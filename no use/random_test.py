@@ -1,9 +1,9 @@
 def test3(n):
-    if n >=10:
-        print('greater than 10..')
+    if n >=20:
+        print('greater than 20..')
         print('jackpot')
     else:
-        print ('less than 10..')
+        print ('less than 20..')
         print ('try again')
     print('END')
 
@@ -11,7 +11,7 @@ def test3(n):
 
 import random
 for a in range(1):
-    n = random.randint(0,10)
+    n = random.randint(0,20)
 
 
 test3(n)
