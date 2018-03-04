@@ -6,14 +6,14 @@ DATA = '안녕하세요 반갑습니다'
 import _script_run_utf8
 _script_run_utf8.main()
 
-def test1_write():
+def test1_write(data):
     """
     # f = open(FILE_DIR+FILE_NAME, mode='w')
     # f.write(DATA)
     # f.close()
     """
     with open(FILE_DIR+FILE_NAME, mode='w', encoding='utf-8') as f:
-        f.write(DATA)
+        f.write(data)
 
 def test2_readlines(FILE_NAME=FILE_NAME):
     """ 한줄씩 끊어서, 리스트로 반환한다 """
@@ -48,6 +48,7 @@ def test4_read(FILE_NAME=FILE_NAME):
 
 
 if __name__== '__main__':
+    test1_write(DATA)
     test2_readlines()
     # with open(FILE_DIR+'i_have_a_dream.pdb', mode='r') as f:
     #     strings = f.readlines()
