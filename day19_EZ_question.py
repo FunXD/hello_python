@@ -25,7 +25,7 @@ test1
 def test2():
     sleep = 0
     length = 10
-    shape = ' '
+    shape = '-'
     word = 'WORLD'
     while True:
         a=0
