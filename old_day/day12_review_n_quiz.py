@@ -43,6 +43,6 @@ a=0
 for n in range(10000000000000):
     a=random.randint(1,999999999)
     b=random.randint(1,999999999)
-    # print(a,'+',b,'=',n+a)
+    print(a,'+',b,'=',n+a)
     time.sleep(0.01)
-    {:7,}
+    # {:7,}
