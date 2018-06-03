@@ -1,0 +1,224 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="cache-control" content="no-cache,must-revalidate" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>조이영어학원 </title>
+	<script type="text/javascript" src="/lib/jquery/js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="/lib/jquery/js/jquery-ui-1.7.2.custom.min.js"></script>
+	<link rel="stylesheet" href="/lib/jquery/css/ui-lightness/jquery-ui-1.7.2.custom.css" type="text/css" />
+	<link rel="stylesheet" href="/include/style.css" type="text/css" />
+	<script type="text/javascript" src="/lib/js/basic.js"></script>
+	<script type="text/javascript" src="/lib/swfobject/swfobject.js"></script>
+</head>
+<body><script type="text/javascript">
+function topmenuOver(obj){
+	$("#navi1").hide();
+	$("#navi2").hide();
+	$("#navi3").hide();
+	$("#navi4").hide();
+	$("#navi5").hide();
+	$("#navi6").hide();
+
+	$("#navi"+obj).show();
+}
+$(document).ready(function(){
+	$("#topmenu1").mouseover(function(){ topmenuOver(1); });
+	$("#topmenu2").mouseover(function(){ topmenuOver(2); });
+	$("#topmenu3").mouseover(function(){ topmenuOver(3); });
+	$("#topmenu4").mouseover(function(){ topmenuOver(4); });
+	$("#topmenu5").mouseover(function(){ topmenuOver(5); });
+	$("#topmenu6").mouseover(function(){ topmenuOver(6); });
+});
+function eLearningStart(mode,url){
+	if(mode == "") alert('로그인후 이용가능합니다');
+	else if(mode == 2) {
+		var eL = window.open(url,'eLearning','width=928,height=500,scrollbars=yes');
+		if(eL == null) document.location.href = url;
+	}
+	else document.location.href = url;
+}
+</script>
+<div id="accessibility">
+	<a href="#sub_content">본문 바로가기</a>
+</div>
+<hr/>
+<div id="wrap">
+	<div id="header">
+		<p id="logo"><a href="/"><img src="/images/logo.gif" alt="LOGO"/></a></p>
+
+		<div id="topmenu">
+		<ul>
+			<li><a href="/"><img src="/images/top_home.gif" alt="HOME"/></a></li>
+						<li><a href="/member/login.php?URL=%2Findex.php"><img src="/images/top_login.gif" alt="로그인"/></a></li>
+			<li><a href="/member/join.php"><img src="/images/top_join.gif" alt="회원가입"/></a></li>
+						<li><img src="/images/top_contact.gif" alt="Contact Us"/></li>
+		</ul>
+		</div>
+
+		<div id="navigation">
+		<ul>
+			<li>
+				<a href="/about/welcome.php"><img src="/images/topmenu1.gif" alt="학원소개" id="topmenu1"/></a>
+				<div id="navi1">
+				<img src="/images/topmenu_bg_10.gif" alt=""/>
+				<ul>
+					<li><a href="/about/welcome.php"><img src="/images/topmenu1_1.gif" alt="인사말"/></a></li>
+					<li><a href="/about/interior.php"><img src="/images/topmenu1_2.gif" alt="학원둘러보기"/></a></li>
+					<li><a href="/about/map.php"><img src="/images/topmenu1_4.gif" alt="오시는길"/></a></li>
+				</ul>
+				<img src="/images/topmenu_bg_14.gif" alt=""/>
+				</div>
+			</li>
+			<li>
+				<a href="/edu/edu2.php"><img src="/images/topmenu2.gif" alt="조이교육" id="topmenu2"/></a>
+				<div id="navi2">
+				<img src="/images/topmenu_bg_10.gif" alt=""/>
+				<ul>
+					<li><a href="/edu/edu2.php"><img src="/images/topmenu2_2.gif" alt="TOEFL"/></a></li>
+					<li><a href="/edu/edu3.php"><img src="/images/topmenu2_3.gif" alt="TEPS"/></a></li>
+					<li><a href="/edu/edu4.php"><img src="/images/topmenu2_4.gif" alt="수능"/></a></li>
+					<li><a href="/edu/edu5.php"><img src="/images/topmenu2_5.gif" alt="영어도서관"/></a></li>
+					<li><a href="/edu/edu6.php"><img src="/images/topmenu2_6.gif" alt="동영상강의"/></a></li>
+				</ul>
+				<img src="/images/topmenu_bg_14.gif" alt=""/>
+				</div>
+			</li>
+			<li>
+				<a href="/info/info1.php"><img src="/images/topmenu3.gif" alt="교육정보" id="topmenu3"/></a>
+				<div id="navi3">
+				<img src="/images/topmenu_bg_10.gif" alt=""/>
+				<ul>
+					<li><a href="/info/info1.php"><img src="/images/topmenu3_1.gif" alt="정보게시판"/></a></li>
+					<li><a href="/info/slide.php" onclick="window.open(this.href,'slide','width=800,height=645,scrollbars=no');return false;"><img src="/images/topmenu3_2.gif" alt="교육시스템"/></a></li>
+					<li><a href="/info/info3.php"><img src="/images/topmenu3_3.gif" alt="영어인증시험정보"/></a></li>
+					<li><a href="/info/info4.php"><img src="/images/topmenu3_4.gif" alt="특목중고입시요강"/></a></li>
+				</ul>
+				<img src="/images/topmenu_bg_14.gif" alt=""/>
+				</div>
+			</li>
+			<li>
+				<a href="/view/view1.php"><img src="/images/topmenu4.gif" alt="합격/입상 현황" id="topmenu4"/></a>
+				<div id="navi4">
+
+				</div>
+			</li>
+			<li>
+				<a href="/community/comm2.php"><img src="/images/topmenu5.gif" alt="커뮤니티" id="topmenu5"/></a>
+				<div id="navi5">
+				<img src="/images/topmenu_bg_10.gif" alt=""/>
+				<ul>
+					<li><a href="/community/comm2.php"><img src="/images/topmenu5_2.gif" alt="과제방"/></a></li>
+					<li><a href="/community/comm3.php"><img src="/images/topmenu5_3.gif" alt="학습자료"/></a></li>
+					<li><a href="/community/comm4.php"><img src="/images/topmenu5_4.gif" alt="포토갤러리"/></a></li>
+				</ul>
+				<img src="/images/topmenu_bg_14.gif" alt=""/>
+				</div>
+			</li>
+			<li>
+				<a href="/customer/cust1.php"><img src="/images/topmenu6.gif" alt="고객센터" id="topmenu6"/></a>
+				<div id="navi6">
+				<img src="/images/topmenu_bg_10.gif" alt=""/>
+				<ul>
+					<li><a href="/customer/cust1.php"><img src="/images/topmenu6_1.gif" alt="공지사항"/></a></li>
+					<li><a href="/customer/cust2.php"><img src="/images/topmenu6_2.gif" alt="Qna"/></a></li>
+
+					<!--<li><a href="/customer/cust3.php"><img src="/images/topmenu6_3.gif" alt="원격지원안내"/></a></li>-->
+					<li><a href="/customer/cust4.php"><img src="/images/topmenu6_4.gif" alt="상담예약"/></a></li>
+					<li><a href="/customer/cust5.php"><img src="/images/topmenu6_5.gif" alt="SITEMAP"/></a></li>
+				</ul>
+				<img src="/images/topmenu_bg_14.gif" alt=""/>
+				</div>
+			</li>
+		</ul>
+		</div>
+
+		<div id="top_quick">
+		<ul>
+			<li><img src="/images/top_favorite.gif" alt="즐겨찾기추가"/></li>
+			<li><img src="/images/top_start.gif" alt="시작페이지로"/></li>
+		</ul>
+		</div>
+
+	</div>
+	<div id="main_loginbox">
+		<img src="/images/loginbox_top.gif" alt=""/>
+				<form name="loginf" method="post" action="/member/login.php?mode=login&amp;URL=%2Findex.php">
+		<fieldset>
+		<input type="text" name="user_id" title="아이디" class="input-text" value="" />
+		<input type="password" name="password" title="패스워드" class="input-text"/>
+		<div class="idsave"><input type="checkbox" name="idsave" value="Y" /> ID저장</div>
+		<input type="image" src="/images/loginbox_login.gif" alt="로그인" class="input-image" />
+		</fieldset>
+		</form>
+
+		<p><a href="/member/join.php"><img src="/images/loginbox_join.gif" alt="회원가입"/></a> <a href="/include/idpw/idpw.php" onclick="window.open(this.href,'idpw','width=350,height=420');return false;"><img src="/images/loginbox_idpw.gif" alt="아이디비밀번호찾기"/></a></p>
+				<div class="s">
+		<ul>
+			<li><a href="/info/slide.php" onclick="window.open(this.href,'slide','width=800,height=645,scrollbars=no');return false;"><img src="/images/main/main_s1.gif" alt="교육시스템"/></a></li>
+			<li><a href="/community/comm2.php"><img src="/images/main/main_s2.gif" alt="과제방"/></a></li>
+			<li><a href="/customer/cust4.php"><img src="/images/main/main_s3.gif" alt="상담예약"/></a></li>
+		</div>
+		<p><a href="" onclick="eLearningStart('',this.href);return false;"><img src="/images/loginbox_elearning.gif" alt="이러닝시작"/></a></p>
+
+		<img src="/images/loginbox_bottom.gif" alt=""/>
+	</div>
+	<div id="main_title">
+		<div><img src="/images/main/title.gif" alt=""/></div>
+		<div>
+		<ul>
+			<li><a href="/community/comm4.php"><img src="/images/main/main_top1.gif" alt="포토갤러리"/></a></li>
+			<li><a href="/customer/cust6.php"><img src="/images/main/main_top2.gif" alt="초보자가이드"/></a></li>
+			<li><a href="/community/comm3.php"><img src="/images/main/main_top3.gif" alt="학습자료"/></a></li>
+		</ul>
+		</div>
+	</div>
+	<div id="main_wrap">
+
+		<div class="box1">
+			<img src="/images/main/tel.gif" alt=""/>
+		</div>
+		<div class="box2">
+			<h2><a href="/customer/cust1.php"><img src="/images/main/bar_notice.gif" alt="공지사항"/></a></h2>
+			<ul>
+
+			</ul>
+		</div>
+		<div class="box2">
+			<h2><a href="/info/info1.php"><img src="/images/main/bar_info.gif" alt="정보게시판"/></a></h2>
+			<ul>
+
+			</ul>
+		</div>
+		<div class="box3">
+			<a href="/edu/edu6.php"><img src="/images/main/movie.gif" alt="동영상강좌"/></a>
+		</div>
+
+
+
+	</div>
+	<div id="footer">
+		<div class="bottom_menu">
+		<ul>
+			<li><a href="/about/welcome.php"><img src="/images/bottom_1.gif" alt="학원소개"/></a></li>
+			<li><a href="/about/map.php"><img src="/images/bottom_2.gif" alt="오시는길"/></a></li>
+			<li><img src="/images/bottom_4.gif" alt="이용약관"/></li>
+			<li><img src="/images/bottom_5.gif" alt="개인보호정책"/></li>
+			<li><a href="/customer/cust1.php"><img src="/images/bottom_6.gif" alt="고객센터"/></a></li>
+		</ul>
+		</div>
+		<div class="bottom_menu2">
+		<ul>
+			<li><img src="/images/bottom_top.gif" alt="위로"/></li>
+			<li><img src="/images/bottom_mail.gif" alt="Mail"/></li>
+		</ul>
+		</div>
+	</div>
+	<address><img src="/images/copyright.gif" alt="주소:인천광역시 연수구 동춘2동 937-1 대산프라자 5층,전화 : 032 ) 890 - 3640,팩스 : 02)234-5610 대표 : 홍길동,개인정보관리책임자 : 홍영진,사업자등록번호 : 1234-56-7890"/></address>
+</div>
+</body>
+</html>
